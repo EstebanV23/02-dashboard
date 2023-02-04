@@ -228,8 +228,12 @@ body{
 
 .statistics-rigth{
   background: linear-gradient(var(--greenColor), var(--darkGreenColor));
-  min-height: 200px;
+  min-height: 300px;
   width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 50px;
 }
 
 .left-header-week{
@@ -267,7 +271,7 @@ body{
 .information-day-stick{
   width: 7px;
   border-radius: 20px;
-  height: 180px;
+  height: 200px;
   background-color: var(--textLigthColor);
   display: flex;
   flex-direction: column-reverse;
@@ -398,9 +402,18 @@ body{
   margin-left: 20px;
 }
 
-.statistics-rigth-graphic{
+.graphic-image{
   width: 100%;
-  object-fit: cover;
+  object-position: center;
+  object-fit: contain;
+  margin-bottom: 20px;
+}
+
+.graphic-texts{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  color: var(--hyperLigthGreen);
 }
 
 .mini-statistics-card{
@@ -425,6 +438,12 @@ body{
   justify-content: space-between;
 }
 
+.statistics-card-info{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .card-header-text{
   display: flex;
   gap:3px;
@@ -441,6 +460,10 @@ body{
 
 .card-energy{
   background: linear-gradient(90deg, var(--ligthBlueColor), var(--blueColor ));
+}
+
+.card-info-graphic{
+  width: 50%;
 }
 
 /* Estilos para el aside */
