@@ -398,6 +398,11 @@ body{
   margin-left: 20px;
 }
 
+.statistics-rigth-graphic{
+  width: 100%;
+  object-fit: cover;
+}
+
 .mini-statistics-card{
   display: flex;
   gap: 30px;
